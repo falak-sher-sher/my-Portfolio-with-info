@@ -30,14 +30,14 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      value: "falak.dev@gmail.com",
-      link: "mailto:falak.dev@gmail.com"
+      value: "fa03014521927@nu.edu.pk",
+      link: "mailto:fa03014521927@nu.edu.pk"
     },
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      value: "+92 xxx xxx xxxx",
-      link: "tel:+92xxxxxxxxx"
+      value: "+92 301 4521927",
+      link: "tel:+923014521927"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
@@ -51,13 +51,13 @@ const Contact = () => {
     {
       icon: <Github className="w-5 h-5" />,
       title: "GitHub",
-      link: "https://github.com/falak",
+      link: "https://github.com/falak-sher-sher",
       color: "hover:text-primary"
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       title: "LinkedIn",
-      link: "https://linkedin.com/in/falak",
+      link: "https://www.linkedin.com/in/falak-sher",
       color: "hover:text-accent"
     },
     {
