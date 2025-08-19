@@ -4,13 +4,13 @@ import { ExternalLink, Github, Smartphone, Globe } from "lucide-react";
 
 // Import project images
 import movieApp from "@/assets/movie-app.jpg";
-import recipeApp from "@/assets/recipe-app.jpg";
+import recipeApp from "@/assets/hotal-app.jpeg";
 import petApp from "@/assets/pet-app.jpg";
-import fileApp from "@/assets/file-app.jpg";
+import InvestmentApp from "@/assets/investment-app.png";  
 import weatherApp from "@/assets/weather-app.jpg";
-import bookApp from "@/assets/book-app.jpg";
-import realestateApp from "@/assets/realestate-app.jpg";
-import ecommerceApp from "@/assets/ecommerce-app.jpg";
+import bookApp from "@/assets/book-app.png";
+import realestateApp from "@/assets/reatestate-app.png";
+import ecommerceApp from "@/assets/ecommerace-app.png";
 
 const Projects = () => {
   const mobileProjects = [
@@ -36,9 +36,9 @@ const Projects = () => {
       type: "mobile"
     },
     {
-      title: "File Sharing App",
+      title: "Investment App",
       description: "Peer-to-peer sharing powered by Appwrite",
-      image: fileApp,
+      image: InvestmentApp,
       tech: ["React Native", "Appwrite", "File Management"],
       type: "mobile"
     },
@@ -84,7 +84,7 @@ const Projects = () => {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute top-4 right-4">
           <Badge variant="secondary" className="bg-black/50 backdrop-blur-sm">

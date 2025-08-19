@@ -97,9 +97,11 @@ const Footer = () => {
               <p>📧 falak.dev@gmail.com</p>
               <p>💼 Available for freelance</p>
             </div>
-            <Button variant="hero" size="sm" className="mt-4" onClick={() => scrollToSection('#contact')}>
-              Start a Project
-            </Button>
+            <a href="mailto:fa03014521927@gmail.com">
+              <Button variant="hero" size="sm" className="mt-4">
+                Start a Project
+              </Button>
+            </a>
           </div>
         </div>
 

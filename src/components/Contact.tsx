@@ -30,8 +30,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      value: "fa03014521927@nu.edu.pk",
-      link: "mailto:fa03014521927@nu.edu.pk"
+      value: "fa03014521927@gmail.com",
+      link: "mailto:fa03014521927@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
