@@ -89,7 +89,7 @@ const Hero = () => {
             <div className="text-sm text-muted-foreground">Projects Built</div>
           </div>
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-secondary">3+</div>
+            <div className="text-2xl font-bold text-secondary">1.5+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </div>
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">

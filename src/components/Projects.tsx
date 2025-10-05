@@ -3,21 +3,21 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Smartphone, Globe } from "lucide-react";
 
 // Import project images
-import movieApp from "@/assets/movie-app.jpg";
+import tregoApp from "@/assets/Trego.png";
 import recipeApp from "@/assets/hotal-app.jpeg";
-import petApp from "@/assets/pet-app.jpg";
+import petApp from "@/assets/Trego3.png";
 import InvestmentApp from "@/assets/investment-app.png";  
-import weatherApp from "@/assets/weather-app.jpg";
 import bookApp from "@/assets/book-app.png";
 import realestateApp from "@/assets/reatestate-app.png";
-import ecommerceApp from "@/assets/ecommerace-app.png";
+import ecommerceApp from "@/assets/Eco.png";
+import fastDeliverySite from "@/assets/FastDelivery2.png";
 
 const Projects = () => {
   const mobileProjects = [
     {
-      title: "Movie App",
-      description: "Movie browsing app with Firebase backend",
-      image: movieApp,
+      title: "Trego App",
+      description: "Modern mobile application with advanced features",
+      image: tregoApp,
       tech: ["React Native", "Firebase", "Expo"],
       type: "mobile"
     },
@@ -43,13 +43,6 @@ const Projects = () => {
       type: "mobile"
     },
     {
-      title: "Weather App",
-      description: "Real-time weather data via APIs and Firebase",
-      image: weatherApp,
-      tech: ["React Native", "API Integration", "Firebase"],
-      type: "mobile"
-    },
-    {
       title: "Book Recommendation App",
       description: "Smart book suggestions with custom backend",
       image: bookApp,
@@ -71,6 +64,13 @@ const Projects = () => {
       description: "Dynamic product catalog, cart system, and user authentication",
       image: ecommerceApp,
       tech: ["React", "Redux Toolkit", "Node.js", "MongoDB"],
+      type: "web"
+    },
+    {
+      title: "FastDeliverySite",
+      description: "Fast delivery service platform with real-time tracking and order management",
+      image: fastDeliverySite,
+      tech: ["React", "Node.js", "MongoDB", "Express"],
       type: "web"
     }
   ];
