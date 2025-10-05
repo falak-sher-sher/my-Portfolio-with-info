@@ -1,73 +1,121 @@
-# Welcome to your Lovable project
+# Falak Sher - Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing my work as a Full-Stack Web & Mobile App Developer.
 
-**URL**: https://lovable.dev/projects/cb7003e3-4b30-43b3-a3a1-d972ce0152c0
+## 🚀 Live Demo
 
-## How can I edit this code?
+[View Live Portfolio](https://falak-portfolio.vercel.app)
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, Shadcn/ui
+- **Icons**: Lucide React, React Icons
+- **Deployment**: Vercel
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cb7003e3-4b30-43b3-a3a1-d972ce0152c0) and start prompting.
+## 📱 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Responsive Design**: Mobile-first approach with beautiful animations
+- **Modern UI**: Clean, professional design with smooth transitions
+- **Project Showcase**: Interactive project cards with live demos
+- **Skills Section**: Comprehensive tech stack display
+- **Contact Integration**: Direct email and WhatsApp contact
+- **SEO Optimized**: Meta tags and Open Graph support
 
-**Use your preferred IDE**
+## 🚀 Deployment on Vercel
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This project is configured for easy deployment on Vercel:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Automatic Deployment
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically detect the Vite framework
+4. Deploy with zero configuration
 
-Follow these steps:
+### Manual Deployment
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run `vercel` in the project directory
+3. Follow the prompts to deploy
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Build Configuration
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Framework**: Vite
+- **Node Version**: 18.x (recommended)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+```
+src/
+├── components/          # React components
+│   ├── ui/             # Shadcn/ui components
+│   ├── About.tsx       # About section
+│   ├── Contact.tsx     # Contact form
+│   ├── Footer.tsx      # Footer component
+│   ├── Hero.tsx        # Hero section
+│   ├── Navigation.tsx  # Navigation bar
+│   ├── Projects.tsx    # Projects showcase
+│   └── Skills.tsx      # Skills section
+├── assets/             # Images and static files
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── pages/              # Page components
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🎨 Customization
+
+### Adding New Projects
+1. Add project images to `src/assets/`
+2. Update the `mobileProjects` or `webProjects` arrays in `src/components/Projects.tsx`
+3. Include project details: title, description, image, tech stack
+
+### Updating Personal Information
+- **Hero Section**: `src/components/Hero.tsx`
+- **About Section**: `src/components/About.tsx`
+- **Contact Info**: `src/components/Contact.tsx`
+
+### Styling
+- **Global Styles**: `src/index.css`
+- **Component Styles**: Tailwind classes in component files
+- **Theme**: Configure in `tailwind.config.ts`
+
+## 🔧 Development
+
+### Prerequisites
+- Node.js 18.x or higher
+- npm or yarn
+
+### Installation
+```bash
+npm install
+```
+
+### Development Server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Preview Production Build
+```bash
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## 📧 Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Email**: fa03014521927@gmail.com
+- **GitHub**: [falak-sher-sher](https://github.com/falak-sher-sher)
+- **WhatsApp**: +92 301 4521927
+- **Location**: Lahore, Pakistan
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with:
+This project is open source and available under the [MIT License](LICENSE).
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cb7003e3-4b30-43b3-a3a1-d972ce0152c0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Built with ❤️ by Falak Sher

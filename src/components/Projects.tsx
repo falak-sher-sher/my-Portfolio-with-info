@@ -6,7 +6,7 @@ import { ExternalLink, Github, Smartphone, Globe } from "lucide-react";
 import tregoApp from "@/assets/Trego.png";
 import recipeApp from "@/assets/hotal-app.jpeg";
 import petApp from "@/assets/Trego3.png";
-import InvestmentApp from "@/assets/investment-app.png";  
+import InvestmentApp from "@/assets/Investment-app.png";  
 import bookApp from "@/assets/book-app.png";
 import realestateApp from "@/assets/reatestate-app.png";
 import ecommerceApp from "@/assets/Eco.png";
