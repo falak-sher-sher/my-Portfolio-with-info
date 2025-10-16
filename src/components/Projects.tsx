@@ -8,6 +8,7 @@ import recipeApp from "@/assets/hotal-app.jpeg";
 import petApp from "@/assets/Trego3.png";
 import InvestmentApp from "@/assets/Investment-app.png";  
 import bookApp from "@/assets/book-app.png";
+import fastDeliveryApp from "@/assets/FastDeliveryApp.png";
 import realestateApp from "@/assets/reatestate-app.png";
 import ecommerceApp from "@/assets/Eco.png";
 import fastDeliverySite from "@/assets/FastDelivery2.png";
@@ -47,6 +48,13 @@ const Projects = () => {
       description: "Smart book suggestions with custom backend",
       image: bookApp,
       tech: ["React Native", "Node.js", "MongoDB"],
+      type: "mobile"
+    },
+    {
+      title: "FastDeliveryApp",
+      description: "Fast delivery service mobile app with real-time tracking",
+      image: fastDeliveryApp,
+      tech: ["React Native", "Redux", "Firebase"],
       type: "mobile"
     }
   ];
