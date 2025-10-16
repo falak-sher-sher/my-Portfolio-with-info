@@ -24,7 +24,7 @@ const Footer = () => {
     },
     {
       icon: <Mail className="w-5 h-5" />,
-      href: "mailto:falak.dev@gmail.com",
+      href: "mailto:thisisfalaksher@gmail.com",
       label: "Email"
     }
   ];
@@ -94,10 +94,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
             <div className="space-y-2 text-muted-foreground">
               <p>📍 Lahore, Pakistan</p>
-              <p>📧 falak.dev@gmail.com</p>
+              <p>📧 thisisfalaksher@gmail.com</p>
+              <p>📱 +92 301 4521927</p>
               <p>💼 Available for freelance</p>
             </div>
-            <a href="mailto:fa03014521927@gmail.com">
+            <a href="mailto:thisisfalaksher@gmail.com">
               <Button variant="hero" size="sm" className="mt-4">
                 Start a Project
               </Button>
