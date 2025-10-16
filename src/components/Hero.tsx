@@ -5,6 +5,13 @@ import heroImage from "@/assets/background.jpg";
 import Profile from  "@/assets/Falak_sher-removebg-preview.png";
 
 const Hero = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -66,12 +73,15 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <a href="mailto:fa03014521927@gmail.com">
-            <Button variant="hero" size="xl" className="group">
-              <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Get In Touch
-            </Button>
-          </a>
+          <Button 
+            variant="hero" 
+            size="xl" 
+            className="group"
+            onClick={scrollToContact}
+          >
+            <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+            Get In Touch
+          </Button>
           <Button variant="glass" size="xl" className="group">
             <Github className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
             <a href="https://github.com/falak-sher-sher">View GitHub</a>
