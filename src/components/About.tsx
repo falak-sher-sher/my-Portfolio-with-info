@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Target, Trophy, Heart, Code, Download } from "lucide-react";
+import { Target, Heart, Code, Download } from "lucide-react";
 
 const About = () => {
   const goals = [
@@ -21,23 +20,7 @@ const About = () => {
     }
   ];
 
-  const achievements = [
-    {
-      icon: <Trophy className="w-6 h-6 text-warning" />,
-      title: "150+ LeetCode Problems Solved",
-      description: "Strengthened algorithmic and problem-solving skills"
-    },
-    {
-      icon: <Code className="w-6 h-6 text-primary" />,
-      title: "8+ Full-Stack Projects",
-      description: "Built comprehensive mobile and web applications"
-    },
-    {
-      icon: <Heart className="w-6 h-6 text-accent" />,
-      title: "User-Centric Design Focus",
-      description: "Combining sleek design with robust backend integration"
-    }
-  ];
+  
 
   return (
     <section id="about" className="py-20 px-6">
@@ -114,50 +97,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Achievements */}
-        <div>
-          <h3 className="text-2xl font-semibold text-center mb-8">Key Achievements</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {achievements.map((achievement, index) => (
-              <div
-                key={achievement.title}
-                className="bg-gradient-card p-6 rounded-xl border border-white/10 text-center hover:scale-105 transition-smooth group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="mb-4 flex justify-center">
-                  <div className="w-12 h-12 bg-card-hover rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    {achievement.icon}
-                  </div>
-                </div>
-                <h4 className="font-semibold mb-2 group-hover:text-primary transition-smooth">
-                  {achievement.title}
-                </h4>
-                <p className="text-sm text-muted-foreground">
-                  {achievement.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Tech Philosophy */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-card p-8 rounded-xl border border-white/10 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-4">Development Philosophy</h3>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              "I believe in creating applications that not only function flawlessly but also 
-              provide exceptional user experiences. Every line of code I write is driven by 
-              the goal of solving real-world problems while maintaining clean, scalable, 
-              and maintainable architectures."
-            </p>
-            <div className="mt-6">
-              <Badge variant="outline" className="mr-2">Clean Code</Badge>
-              <Badge variant="outline" className="mr-2">User Experience</Badge>
-              <Badge variant="outline" className="mr-2">Scalable Solutions</Badge>
-              <Badge variant="outline">Continuous Learning</Badge>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

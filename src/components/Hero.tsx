@@ -91,15 +91,15 @@ const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-primary">150+</div>
+            <div className="text-2xl font-bold text-primary">200+</div>
             <div className="text-sm text-muted-foreground">LeetCode Problems</div>
           </div>
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-accent">8+</div>
+            <div className="text-2xl font-bold text-accent">12+</div>
             <div className="text-sm text-muted-foreground">Projects Built</div>
           </div>
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-secondary">1.5+</div>
+            <div className="text-2xl font-bold text-secondary">2+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </div>
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
