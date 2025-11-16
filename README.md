@@ -109,7 +109,7 @@ npm run preview
 
 - **Email**: fa03014521927@gmail.com
 - **GitHub**: [falak-sher-sher](https://github.com/falak-sher-sher)
-- **WhatsApp**: +92 301 4521927
+- **WhatsApp**: +92 326 3853964
 - **Location**: Lahore, Pakistan
 
 ## 📄 License

@@ -36,8 +36,8 @@ const Contact = () => {
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      value: "+92 301 4521927",
-      link: "tel:+923014521927"
+      value: "+92 326 3853964",
+      link: "tel:+923263853964"
     },
     {
       icon: <MapPin className="w-5 h-5" />,

@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="space-y-2 text-muted-foreground">
               <p>📍 Lahore, Pakistan</p>
               <p>📧 thisisfalaksher@gmail.com</p>
-              <p>📱 +92 301 4521927</p>
+              <p>📱 +92 326 3853964</p>
               <p>💼 Available for freelance</p>
             </div>
             <a href="mailto:thisisfalaksher@gmail.com">

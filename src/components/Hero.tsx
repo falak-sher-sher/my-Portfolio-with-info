@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="mb-6">
           {/* WhatsApp Floating Button */}
           <a
-            href="https://wa.me/923014521927"
+            href="https://wa.me/923263853964"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-8 right-8 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition-colors"
@@ -89,7 +89,7 @@ const Hero = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
             <div className="text-2xl font-bold text-primary">200+</div>
             <div className="text-sm text-muted-foreground">LeetCode Problems</div>
