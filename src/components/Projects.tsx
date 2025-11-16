@@ -12,6 +12,9 @@ import fastDeliveryApp from "@/assets/FastDeliveryApp.png";
 import realestateApp from "@/assets/reatestate-app.png";
 import ecommerceApp from "@/assets/Eco.png";
 import fastDeliverySite from "@/assets/FastDelivery2.png";
+import radiantBloomSite from "@/assets/RadiantBloom.png";
+import tregoAdminPanel from "@/assets/TregoAdminPannel.png";
+import pressMagicSite from "@/assets/PressMagic.png";
 
 const Projects = () => {
   const mobileProjects = [
@@ -79,6 +82,27 @@ const Projects = () => {
       description: "Fast delivery service platform with real-time tracking and order management",
       image: fastDeliverySite,
       tech: ["React", "Node.js", "MongoDB", "Express"],
+      type: "web"
+    },
+    {
+      title: "RadiantBloom Site",
+      description: "Elegant floral brand website with modern UI and responsive design",
+      image: radiantBloomSite,
+      tech: ["React", "Tailwind CSS", "Vite"],
+      type: "web"
+    },
+    {
+      title: "Trego Admin Panel",
+      description: "Admin dashboard for managing data with charts and tables",
+      image: tregoAdminPanel,
+      tech: ["React", "TypeScript", "Shadcn/ui"],
+      type: "web"
+    },
+    {
+      title: "PressMagic",
+      description: "Landing website with branded sections and smooth interactions",
+      image: pressMagicSite,
+      tech: ["React", "Tailwind CSS", "Framer Motion"],
       type: "web"
     }
   ];
