@@ -23,25 +23,25 @@ const About = () => {
   
 
   return (
-    <section id="about" className="py-20 px-6 relative overflow-hidden">
+    <section id="about" className="py-16 md:py-20 px-4 md:px-6 relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-48 md:w-64 h-48 md:h-64 bg-accent/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">About Us</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
             A passionate team of developers from Lahore, Pakistan, dedicated to creating exceptional digital experiences
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16">
           {/* About Content */}
           <div className="space-y-6">
-            <div className="bg-card/30 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-primary/20 transition-all duration-300 shadow-lg hover:shadow-primary/5 group">
+            <div className="bg-card/30 backdrop-blur-md p-6 md:p-8 rounded-2xl border border-white/10 hover:border-primary/20 transition-all duration-300 shadow-lg hover:shadow-primary/5 group">
               <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Heart className="w-5 h-5 text-primary" />

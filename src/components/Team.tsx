@@ -64,16 +64,16 @@ const Team = () => {
       <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px] -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">Meet Our Team</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             The talented individuals driving innovation and excellence in every project
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {teamMembers.map((member, index) => (
             <div
               key={member.name}
@@ -81,7 +81,7 @@ const Team = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image Container */}
-              <div className="relative mb-6 mx-auto w-48 h-48 shrink-0">
+              <div className="relative mb-6 mx-auto w-40 h-40 md:w-48 md:h-48 shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
                 <img
                   src={member.image}
@@ -102,7 +102,7 @@ const Team = () => {
                   <Badge
                     key={skill}
                     variant="outline"
-                    className="bg-primary/5 border-primary/20 hover:bg-primary/10 transition-colors"
+                    className="bg-primary/5 border-primary/20 text-primary hover:bg-primary/10 transition-colors"
                   >
                     {skill}
                   </Badge>

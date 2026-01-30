@@ -60,7 +60,7 @@ const Skills = () => {
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 whitespace-nowrap">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">Technical Proficiency</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

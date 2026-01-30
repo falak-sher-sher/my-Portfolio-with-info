@@ -178,7 +178,7 @@ const Projects = () => {
             <Badge
               key={tech}
               variant="outline"
-              className="text-xs bg-primary/10 border-primary/30 hover:bg-primary/20 transition-smooth"
+              className="text-xs bg-primary/10 border-primary/30 text-primary hover:bg-primary/20 transition-smooth"
             >
               {tech}
             </Badge>
@@ -217,7 +217,7 @@ const Projects = () => {
             <Smartphone className="w-6 h-6 text-accent" />
             <h3 className="text-2xl font-semibold">Mobile Applications</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {mobileProjects.map((project, index) => (
               <ProjectCard key={project.title} project={project} index={index} />
             ))}
@@ -230,7 +230,7 @@ const Projects = () => {
             <Globe className="w-6 h-6 text-primary" />
             <h3 className="text-2xl font-semibold">Web Applications</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {webProjects.map((project, index) => (
               <ProjectCard key={project.title} project={project} index={index + 6} />
             ))}
