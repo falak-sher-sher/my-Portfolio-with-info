@@ -118,13 +118,13 @@ const Navigation = () => {
 
             {/* Sidebar Footer */}
             <div className="p-6 border-t border-slate-900/10 space-y-4">
-              <Button variant="outline" size="lg" className="w-full justify-start text-slate-900 border-slate-900/20 hover:bg-slate-900/10 hover:text-slate-900">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full justify-start text-slate-900 border-slate-900/20 hover:bg-slate-900/10 hover:text-slate-900 bg-transparent"
+              >
                 <Github className="w-5 h-5 mr-3" />
-                GitHub
-              </Button>
-              <Button variant="default" size="lg" className="w-full justify-start bg-slate-900 text-white hover:bg-slate-800" onClick={() => scrollToSection('#contact')}>
-                <Mail className="w-5 h-5 mr-3" />
-                Hire Me
+                <a href="https://github.com/falak-sher-sher" target="_blank" rel="noopener noreferrer">GitHub</a>
               </Button>
             </div>
           </div>
