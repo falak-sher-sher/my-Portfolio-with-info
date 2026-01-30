@@ -19,6 +19,7 @@ const Navigation = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Team', href: '#team' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -31,20 +32,11 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-      scrolled 
-        ? 'bg-background/80 backdrop-blur-lg border-b border-white/10 shadow-card' 
-        : 'bg-transparent'
-    }`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#22D3EE] border-b border-primary/20 shadow-lg shadow-primary/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <button
-            onClick={() => scrollToSection('#hero')}
-            className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
-          >
-            Falak
-          </button>
+          {/* Logo Removed as per request */}
+          <div className="w-8"></div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -52,20 +44,20 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-foreground transition-smooth relative group"
+                className="text-slate-900 font-bold hover:text-white transition-colors relative group text-sm uppercase tracking-wider"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
           </div>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm" className="text-slate-900 hover:text-white hover:bg-slate-900/20">
               <Github className="w-4 h-4" />
             </Button>
-            <Button variant="hero" size="sm" onClick={() => scrollToSection('#contact')}>
+            <Button variant="default" size="sm" onClick={() => scrollToSection('#contact')} className="bg-slate-900 text-white hover:bg-slate-800">
               <Mail className="w-4 h-4 mr-2" />
               Hire Me
             </Button>
@@ -74,7 +66,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-smooth"
+            className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-smooth text-slate-900"
           >
             {isOpen ? (
               <X className="w-6 h-6" />

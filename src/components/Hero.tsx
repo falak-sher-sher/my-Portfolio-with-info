@@ -51,12 +51,11 @@ const Hero = () => {
             <FaWhatsapp size={32} />
           </a>
 
-          <p className="text-accent text-lg mb-2 font-medium">👋 Hello, I'm</p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            <span className="gradient-text">Falak</span>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in leading-tight">
+            We are a <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary drop-shadow-lg">Team of Developers</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
-            Full-Stack Web & Mobile App Developer
+          <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6 font-light tracking-wide">
+            Full-Stack Web & Mobile App Experts
           </h2>
         </div>
 
@@ -68,8 +67,8 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
           Specializing in <span className="text-primary font-semibold">React</span>, 
           <span className="text-accent font-semibold"> React Native</span>, and 
-          <span className="text-secondary font-semibold"> Node.js</span>. 
-          I build user-centric apps that combine sleek design with robust backend integration.
+          <span className="text-secondary font-semibold"> Node.js</span>, 
+          we build user-centric apps that combine sleek design with robust backend integration.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -90,30 +89,24 @@ const Hero = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-primary">200+</div>
-            <div className="text-sm text-muted-foreground">LeetCode Problems</div>
+          <div className="bg-card/10 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/5 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/20 group">
+            <div className="text-3xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">200+</div>
+            <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">LeetCode Problems</div>
           </div>
-          <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-accent">12+</div>
-            <div className="text-sm text-muted-foreground">Projects Built</div>
+          <div className="bg-card/10 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/5 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-accent/20 group">
+            <div className="text-3xl font-bold text-accent mb-2 group-hover:text-accent/80 transition-colors">15+</div>
+            <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">Projects Built</div>
           </div>
-          <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-secondary">2+</div>
-            <div className="text-sm text-muted-foreground">Years Experience</div>
+          <div className="bg-card/10 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/5 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-secondary/20 group">
+            <div className="text-3xl font-bold text-secondary mb-2 group-hover:text-secondary/80 transition-colors">2+</div>
+            <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">Years Experience</div>
           </div>
-          <div className="bg-card/10 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-            <div className="text-2xl font-bold text-primary">100%</div>
-            <div className="text-sm text-muted-foreground">Passion Driven</div>
+          <div className="bg-card/10 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/5 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/20 group">
+            <div className="text-3xl font-bold text-primary mb-2 group-hover:text-primary/80 transition-colors">100%</div>
+            <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">Passion Driven</div>
           </div>
         </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
-        </div>
       </div>
     </section>
   );

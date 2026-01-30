@@ -5,90 +5,94 @@ const About = () => {
   const goals = [
     {
       icon: <Target className="w-5 h-5" />,
-      title: "Production-Ready Apps",
-      description: "Launch seamless apps with user/admin dashboards"
+      title: "Enterprise-Grade Solutions",
+      description: "Engineering robust, scalable architectures that drive business growth and operational efficiency."
     },
     {
       icon: <Code className="w-5 h-5" />,
-      title: "GitHub Collaboration",
-      description: "Improve team workflows and version control"
+      title: "Technical Excellence",
+      description: "Leveraging cutting-edge technologies and industry best practices to deliver superior code quality."
     },
     {
       icon: <Heart className="w-5 h-5" />,
-      title: "Technical Leadership",
-      description: "Strengthen communication in full-stack development"
+      title: "Strategic Partnership",
+      description: "Fostering long-term success through transparent communication and dedicated technical stewardship."
     }
   ];
 
   
 
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-20 px-6 relative overflow-hidden">
+      {/* Background Decor */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">About Me</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">About Us</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate developer from Lahore, Pakistan, dedicated to creating exceptional digital experiences
+            A passionate team of developers from Lahore, Pakistan, dedicated to creating exceptional digital experiences
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* About Content */}
           <div className="space-y-6">
-            <div className="bg-gradient-card p-6 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-                <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <Heart className="w-4 h-4 text-primary" />
+            <div className="bg-card/30 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-primary/20 transition-all duration-300 shadow-lg hover:shadow-primary/5 group">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
+                <div className="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Heart className="w-5 h-5 text-primary" />
                 </div>
-                My Journey
+                Who We Are
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm Falak, a Full-Stack Web and Mobile App Developer based in Lahore, Pakistan. 
-                I specialize in React, React Native, Node.js, Express, MongoDB, and Redux Toolkit. 
-                My passion lies in building user-centric applications that seamlessly combine 
+                We are a dynamic team of Full-Stack Web and Mobile App Developers based in Lahore, Pakistan. 
+                Our collective expertise spans <span className="text-primary font-medium">React</span>, <span className="text-accent font-medium">React Native</span>, Node.js, Express, MongoDB, and Redux Toolkit. 
+                We are united by a passion for building user-centric applications that seamlessly combine 
                 elegant design with robust backend integration.
               </p>
             </div>
 
-            <div className="bg-gradient-card p-6 rounded-xl border border-white/10">
-              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-                <div className="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
-                  <Code className="w-4 h-4 text-accent" />
+            <div className="bg-card/30 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-accent/20 transition-all duration-300 shadow-lg hover:shadow-accent/5 group">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3">
+                <div className="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Code className="w-5 h-5 text-accent" />
                 </div>
-                Problem Solving
+                Our Approach
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                With over 150 problems solved on LeetCode, I've honed my algorithmic thinking 
-                and problem-solving skills. This foundation helps me approach complex development 
-                challenges with analytical precision and innovative solutions.
+                With a strong foundation in algorithmic thinking and system design, we approach every challenge 
+                with analytical precision. Having solved complex problems across various domains, we deliver 
+                innovative solutions that are not just functional, but scalable and efficient.
               </p>
             </div>
 
-            <Button variant="hero" className="w-full sm:w-auto">
-              <Download className="w-4 h-4 mr-2" />
-              Download Resume
+            <Button variant="hero" className="w-full sm:w-auto group">
+              <Download className="w-4 h-4 mr-2 group-hover:-translate-y-1 transition-transform" />
+              Download Company Profile
             </Button>
           </div>
 
           {/* Goals */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Current Goals</h3>
+            <h3 className="text-2xl font-semibold mb-6 px-2">Our Core Values</h3>
             <div className="space-y-4">
               {goals.map((goal, index) => (
                 <div
                   key={goal.title}
-                  className="bg-gradient-card p-4 rounded-lg border border-white/10 hover:border-primary/30 transition-smooth"
+                  className="bg-card/30 backdrop-blur-md p-6 rounded-xl border border-white/10 hover:border-primary/30 hover:bg-white/5 transition-all duration-300 hover:translate-x-2"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
                       {goal.icon}
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">{goal.title}</h4>
-                      <p className="text-sm text-muted-foreground">{goal.description}</p>
+                      <h4 className="text-lg font-semibold mb-2">{goal.title}</h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{goal.description}</p>
                     </div>
                   </div>
                 </div>

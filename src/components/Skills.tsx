@@ -1,41 +1,41 @@
-import { Code, Database, Globe, Smartphone, GitBranch, Zap } from "lucide-react";
+import { Code, Database, Globe, Smartphone, GitBranch, Zap, CreditCard } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Frontend Development",
       icon: <Globe className="w-6 h-6" />,
-      skills: ["React", "React Native", "Redux Toolkit", "Zustand", "Expo"],
+      skills: ["React.js", "Next.js", "TypeScript", "Vue.js", "Redux Toolkit", "Tailwind CSS"],
       color: "primary"
     },
     {
-      title: "Backend",
+      title: "Backend Engineering",
       icon: <Database className="w-6 h-6" />,
-      skills: ["Node.js", "Express", "MongoDB", "Firebase", "Supabase", "Appwrite"],
+      skills: ["Node.js", "Django", "Laravel", "Express.js", "MongoDB", "PostgreSQL"],
       color: "secondary"
     },
     {
-      title: "Mobile",
+      title: "Mobile App Development",
       icon: <Smartphone className="w-6 h-6" />,
-      skills: ["React Native", "Expo", "Navigation", "State Management"],
+      skills: ["React Native", "Flutter", "Kotlin", "Expo", "iOS & Android"],
       color: "accent"
+    },
+    {
+      title: "Payment Integrations",
+      icon: <CreditCard className="w-6 h-6" />,
+      skills: ["Stripe", "Wave", "Orange Money", "Google Pay", "Mobile Money", "PayPal"],
+      color: "primary"
+    },
+    {
+      title: "Specialized Expertise",
+      icon: <Zap className="w-6 h-6" />,
+      skills: ["Real-time Architecture", "API Design & Integration", "Performance Optimization", "Cloud Infrastructure", "System Security"],
+      color: "secondary"
     },
     {
       title: "Tools & DevOps",
       icon: <GitBranch className="w-6 h-6" />,
-      skills: ["GitHub Workflows", "REST APIs", "CI/CD", "Version Control"],
-      color: "primary"
-    },
-    {
-      title: "Specialties",
-      icon: <Zap className="w-6 h-6" />,
-      skills: ["App Design", "Custom Integration", "Problem Solving", "Team Leadership"],
-      color: "secondary"
-    },
-    {
-      title: "Problem Solving",
-      icon: <Code className="w-6 h-6" />,
-      skills: ["150+ LeetCode", "Algorithms", "Data Structures", "System Design"],
+      skills: ["Docker", "AWS", "GitHub Actions", "CI/CD Pipelines", "Linux Administration"],
       color: "accent"
     }
   ];
@@ -43,50 +43,53 @@ const Skills = () => {
   const getColorClasses = (color: string) => {
     switch (color) {
       case 'primary':
-        return 'border-primary/30 hover:border-primary/60 hover:shadow-primary';
+        return 'border-primary/20 bg-card/40 hover:border-primary/50 hover:shadow-primary/10';
       case 'secondary':
-        return 'border-secondary/30 hover:border-secondary/60 hover:shadow-glow';
+        return 'border-secondary/20 bg-card/40 hover:border-secondary/50 hover:shadow-secondary/10';
       case 'accent':
-        return 'border-accent/30 hover:border-accent/60 hover:shadow-card';
+        return 'border-accent/20 bg-card/40 hover:border-accent/50 hover:shadow-accent/10';
       default:
-        return 'border-primary/30 hover:border-primary/60';
+        return 'border-primary/20 bg-card/40 hover:border-primary/50';
     }
   };
 
   return (
-    <section id="skills" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="py-20 px-6 relative">
+      {/* Background Decor */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[100px] -z-10"></div>
+
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Skills & Technologies</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">Technical Proficiency</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Proficient in modern technologies for building scalable web and mobile applications
+            Leveraging a comprehensive stack of modern technologies to build robust, scalable solutions across platforms
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className={`bg-gradient-card p-6 rounded-xl border transition-smooth hover:scale-105 ${getColorClasses(category.color)}`}
+              className={`backdrop-blur-xl p-8 rounded-2xl border transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group ${getColorClasses(category.color)}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center gap-3 mb-4">
-                <div className={`p-2 rounded-lg bg-${category.color}/20`}>
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`p-3 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 group-hover:scale-110 transition-transform duration-300`}>
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-semibold">{category.title}</h3>
+                <h3 className="text-xl font-bold tracking-tight">{category.title}</h3>
               </div>
               
-              <div className="space-y-2">
+              <div className="grid grid-cols-2 gap-3">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skill}
-                    className="flex items-center gap-2 text-muted-foreground"
+                    className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors"
                   >
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="hover:text-foreground transition-smooth">{skill}</span>
+                    <div className={`w-1.5 h-1.5 rounded-full bg-${category.color === 'primary' ? 'primary' : category.color === 'secondary' ? 'secondary' : 'accent'}`}></div>
+                    <span>{skill}</span>
                   </div>
                 ))}
               </div>
@@ -94,26 +97,7 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Tech Stack Icons */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold mb-8 text-muted-foreground">
-            Technologies I Work With
-          </h3>
-          <div className="flex flex-wrap justify-center gap-8">
-            {[
-              "React", "Node.js", "MongoDB", "Firebase", "React Native", 
-              "Express", "Redux", "GitHub", "TypeScript", "JavaScript"
-            ].map((tech, index) => (
-              <div
-                key={tech}
-                className="bg-card/50 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-full text-sm font-medium hover:bg-card transition-smooth hover:scale-105"
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
-                {tech}
-              </div>
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   );

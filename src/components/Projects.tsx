@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Smartphone, Globe } from "lucide-react";
+import { ExternalLink, Github, Smartphone, Globe, X } from "lucide-react";
+import { useState } from "react";
 
 // Import project images
 import tregoApp from "@/assets/Trego.png";
@@ -15,8 +16,14 @@ import fastDeliverySite from "@/assets/FastDelivery2.png";
 import radiantBloomSite from "@/assets/RadiantBloom.png";
 import tregoAdminPanel from "@/assets/TregoAdminPannel.png";
 import pressMagicSite from "@/assets/PressMagic.png";
+import presmaAdminImg from "@/assets/PresmaAdmin.png";
+import blindsCloudImg from "@/assets/BlindsCloud.png";
+import rydaImg from "@/assets/Ryda.png";
+import presmagicAppImg from "@/assets/presmagic.com.png";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+
   const mobileProjects = [
     {
       title: "Trego App",
@@ -59,6 +66,13 @@ const Projects = () => {
       image: fastDeliveryApp,
       tech: ["React Native", "Redux", "Firebase"],
       type: "mobile"
+    },
+    {
+      title: "Presmagic",
+      description: "Innovative mobile application with seamless user experience",
+      image: presmagicAppImg,
+      tech: ["React Native", "Firebase", "Redux"],
+      type: "mobile"
     }
   ];
 
@@ -89,6 +103,27 @@ const Projects = () => {
       description: "Elegant floral brand website with modern UI and responsive design",
       image: radiantBloomSite,
       tech: ["React", "Tailwind CSS", "Vite"],
+      type: "web"
+    },
+    {
+      title: "Presmagic Admin site",
+      description: "Comprehensive admin dashboard for managing platform content",
+      image: presmaAdminImg,
+      tech: ["React", "Node.js", "MongoDB", "Express"],
+      type: "web"
+    },
+    {
+      title: "BlindsCloud",
+      description: "Modern web platform for cloud-based window blind management",
+      image: blindsCloudImg,
+      tech: ["React", "Tailwind CSS", "Node.js"],
+      type: "web"
+    },
+    {
+      title: "Ryda Car",
+      description: "Automotive marketplace and booking platform",
+      image: rydaImg,
+      tech: ["React", "Node.js", "MongoDB"],
       type: "web"
     },
     {
@@ -155,7 +190,7 @@ const Projects = () => {
             <Github className="w-4 h-4 mr-2" />
             Code
           </Button>
-          <Button variant="default" size="sm" className="flex-1">
+          <Button variant="default" size="sm" className="flex-1" onClick={() => setSelectedProject(project)}>
             <ExternalLink className="w-4 h-4 mr-2" />
             Demo
           </Button>
@@ -210,6 +245,44 @@ const Projects = () => {
           </Button>
         </div>
       </div>
+
+      {/* Full Screen Project Preview Modal */}
+      {selectedProject && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4 animate-in fade-in duration-300"
+          onClick={() => setSelectedProject(null)}
+        >
+          <button 
+            onClick={() => setSelectedProject(null)}
+            className="absolute top-6 right-6 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-50 group"
+          >
+            <X className="w-8 h-8 text-white group-hover:rotate-90 transition-transform duration-300" />
+          </button>
+          
+          <div 
+            className="relative max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-card/10 border border-white/10 p-2 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img 
+              src={selectedProject.image} 
+              alt={selectedProject.title} 
+              className="w-full h-auto rounded-xl"
+            />
+            
+            <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent rounded-b-xl">
+              <h3 className="text-3xl font-bold text-white mb-3">{selectedProject.title}</h3>
+              <p className="text-lg text-gray-200 mb-6 max-w-3xl">{selectedProject.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.tech.map((tech: string) => (
+                  <Badge key={tech} variant="secondary" className="bg-primary/20 hover:bg-primary/30 text-white border-none px-4 py-1.5 text-sm">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
