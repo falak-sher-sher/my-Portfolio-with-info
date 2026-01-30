@@ -5,6 +5,11 @@
 /* Modern Developer Portfolio Design System */
 
 @layer base {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   :root {
     /* Core Theme Colors */
     --background: 240 10% 3.9%;

@@ -73,9 +73,7 @@ const Navigation = () => {
           
           {/* Mobile Actions - Show minimal actions on right */}
           <div className="md:hidden flex items-center gap-2">
-             <Button variant="ghost" size="sm" className="text-slate-900 hover:text-white hover:bg-slate-900/20" onClick={() => scrollToSection('#contact')}>
-               <Mail className="w-5 h-5" />
-             </Button>
+             {/* Removed extra mail icon as per request to keep header clean */}
           </div>
         </div>
 
