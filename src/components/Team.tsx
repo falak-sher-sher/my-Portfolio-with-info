@@ -58,7 +58,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 px-6 relative overflow-hidden">
+    <section id="team" className="py-20 px-6 relative overflow-hidden w-full max-w-[100vw]">
       {/* Background Decor */}
       <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px] -z-10"></div>

@@ -27,9 +27,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
       </div>
       
-      {/* Floating Elements */}
-      <div className="absolute inset-0 z-10">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-float"></div>
+        <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-float"></div>
         <div className="absolute top-40 right-32 w-3 h-3 bg-accent rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-32 left-40 w-2 h-2 bg-secondary rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
         <div className="absolute bottom-20 right-20 w-4 h-4 bg-primary/50 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
@@ -51,7 +50,7 @@ const Hero = () => {
             <FaWhatsapp size={32} />
           </a>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in leading-tight px-2">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in leading-tight px-2 break-words max-w-[100vw]">
             We are a <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary drop-shadow-lg inline-block">Team of Developers</span>
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-6 font-light tracking-wide px-4">
