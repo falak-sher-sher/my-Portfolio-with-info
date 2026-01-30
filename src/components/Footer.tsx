@@ -75,12 +75,12 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <ul className="flex flex-wrap gap-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-muted-foreground hover:text-primary transition-smooth text-left"
+                    className="text-sm px-4 py-2 rounded-full bg-white/5 hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-105 border border-white/5 hover:border-primary/30 shadow-sm hover:shadow-primary/10"
                   >
                     {link.name}
                   </button>

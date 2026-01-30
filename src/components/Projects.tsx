@@ -249,32 +249,34 @@ const Projects = () => {
       {/* Full Screen Project Preview Modal */}
       {selectedProject && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4 animate-in fade-in duration-300"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-md p-4 animate-in fade-in duration-300"
           onClick={() => setSelectedProject(null)}
         >
           <button 
             onClick={() => setSelectedProject(null)}
-            className="absolute top-6 right-6 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-50 group"
+            className="absolute top-4 right-4 md:top-6 md:right-6 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors z-50 group"
           >
-            <X className="w-8 h-8 text-white group-hover:rotate-90 transition-transform duration-300" />
+            <X className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:rotate-90 transition-transform duration-300" />
           </button>
           
           <div 
-            className="relative max-w-6xl w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-card/10 border border-white/10 p-2 shadow-2xl"
+            className="relative max-w-5xl w-full max-h-[85vh] md:max-h-[90vh] overflow-y-auto rounded-2xl bg-slate-900/50 border border-white/10 shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            <img 
-              src={selectedProject.image} 
-              alt={selectedProject.title} 
-              className="w-full h-auto rounded-xl"
-            />
+            <div className="relative bg-black/50 w-full flex items-center justify-center p-2">
+              <img 
+                src={selectedProject.image} 
+                alt={selectedProject.title} 
+                className="w-full h-auto max-h-[60vh] md:max-h-[70vh] object-contain rounded-t-xl"
+              />
+            </div>
             
-            <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent rounded-b-xl">
-              <h3 className="text-3xl font-bold text-white mb-3">{selectedProject.title}</h3>
-              <p className="text-lg text-gray-200 mb-6 max-w-3xl">{selectedProject.description}</p>
+            <div className="p-6 md:p-8 bg-card border-t border-white/5">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">{selectedProject.title}</h3>
+              <p className="text-base md:text-lg text-gray-300 mb-6 max-w-3xl leading-relaxed">{selectedProject.description}</p>
               <div className="flex flex-wrap gap-2">
                 {selectedProject.tech.map((tech: string) => (
-                  <Badge key={tech} variant="secondary" className="bg-primary/20 hover:bg-primary/30 text-white border-none px-4 py-1.5 text-sm">
+                  <Badge key={tech} variant="secondary" className="bg-primary/20 hover:bg-primary/30 text-white border-none px-3 py-1 text-xs md:text-sm">
                     {tech}
                   </Badge>
                 ))}
