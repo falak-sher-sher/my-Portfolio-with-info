@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Mail, MapPin } from "lucide-react";
 import { FaWhatsapp } from 'react-icons/fa';
 import heroImage from "@/assets/background.jpg";
-import Profile from  "@/assets/Falak_sher-removebg-preview.png";
+import Profile from  "@/assets/falak.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20 sm:py-0">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto animate-slide-up pt-24 sm:pt-0">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto animate-slide-up mt-16 sm:mt-0">
 
 
         <div className="mb-6">
@@ -87,7 +87,7 @@ const Hero = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center pb-8 sm:pb-0">
           <div className="bg-card/10 backdrop-blur-md border border-white/10 rounded-xl p-3 sm:p-6 hover:bg-white/5 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/20 group">
             <div className="text-xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2 group-hover:text-primary/80 transition-colors">200+</div>
             <div className="text-[10px] sm:text-sm text-muted-foreground font-medium uppercase tracking-wider">LeetCode Problems</div>
